@@ -1,0 +1,12 @@
+Ajax (Asynchronous JavaScript and XML) is a technology used for creating dynamic and interactive web applications.
+
+
+Asynchronous: Allows web pages to send and receive data from a server asynchronously (in the background) without reloading the entire page.
+
+JavaScript: Primary language used to implement Ajax functionalities, handling requests and responses asynchronously.XMLHttpRequest: API used by JavaScript to make HTTP requests to the server and handle server responses.
+
+DOM Manipulation: Enables updating parts of a web page without a full reload, enhancing user experience with smoother interactions.
+
+JSON: Often used instead of XML for data interchange due to its lightweight format and ease of parsing in JavaScript.Ajax revolutionized web development by enabling richer, more responsive user interfaces without the need for full page reloads, leading to the widespread adoption of single-page applications (SPAs) and enhanced user experience on the web.
+
+Cross-Origin Requests: Allows fetching data from different domains or origins, enhancing integration and fetching external resources securely using CORS (Cross-Origin Resource Sharing).Error Handling: Provides mechanisms to handle errors and timeouts gracefully, ensuring robustness in data retrieval and application functionality.Asynchronous Processing: Supports parallel requests, allowing multiple operations to occur simultaneously without blocking the user interface, improving performance.Security Considerations: Requires careful consideration of security measures like CSRF (Cross-Site Request Forgery) protection and secure handling of sensitive data.

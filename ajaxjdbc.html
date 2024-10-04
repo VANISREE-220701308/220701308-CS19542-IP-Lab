@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+</head>
+<body>
+    <h1>Enter Roll Number to Get Student Details</h1>
+    <form action="StudentServlet" method="post">
+        <label for="regNo">Registration Number:</label>
+        <input type="text" id="regNo" name="regNo" required>
+        <input type="submit" value="Get Details">
+    </form>
+
+    <div id="student-details">
+        <!-- This section will display student details after form submission -->
+    </div>
+</body>
+</html>

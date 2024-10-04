@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Customers  Form</title>
+</head>
+<body>
+    <h2>Insert Data</h2>
+    <form action="insertioncus.php" method="POST">
+        <label for="CID">CID:</label>
+        <input type="number" id="CID" name="CID" required><br><br>
+
+        <label for="CNAME">CNAME:</label>
+        <input type="text" id="CNAME" name="CNAME" required><br><br>
+
+        <label for="CEMAIL">CEMAIL:</label>
+        <input type="text" id="CEMAIL" name="CEMAIL" required><br><br>
+
+        <label for="CPHONE">CPHONE:</label>
+        <input type="number" id="CPHONE" name="CPHONE" required><br><br>
+		
+		<label for="CADDRESS">CADDRESS:</label>
+        <input type="text" id="CADDRESS" name="CADDRESS" required><br><br>
+
+        <button type="submit"> Submit</button>
+    </form>
+</body>
+</html>

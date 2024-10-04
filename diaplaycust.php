@@ -1,0 +1,45 @@
+<?php
+// Database connection
+$con = mysqli_connect("localhost:3307", "root", "", "php");
+
+// Check connection
+if (!$con) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+// SQL query to fetch ANO, ATYPE, and BALANCE columns from accounts table
+$sql = "SELECT * FROM customers";
+$result = mysqli_query($con, $sql);
+
+// Check if there are any results
+if (mysqli_num_rows($result) > 0) {
+    // Start HTML table
+    echo "<table border='1'>
+            <tr>
+                <th>CID</th>
+                <th>CNAME</th>
+                <th>CEMAIL</th>
+				<th>CPHONE</th>
+				<th>CADDRESS</th>
+            </tr>";
+
+    // Fetch and display each row of data
+    while ($row = mysqli_fetch_assoc($result)) {
+        echo "<tr>
+                <td>" . $row['CID'] . "</td>
+                <td>" . $row['CNAME'] . "</td>
+                <td>" . $row['CEMAIL'] . "</td>
+				<td>" . $row['CPHONE'] . "</td>
+				<td>" . $row['CADDRESS'] . "</td>
+              </tr>";
+    }
+
+    // End HTML table
+    echo "</table>";
+} else {
+    echo "No data found in the accounts table.";
+}
+
+// Close connection
+mysqli_close($con);
+?>
